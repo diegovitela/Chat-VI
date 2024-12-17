@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .left-section {
+            width: 50%;
+            background-color: #4E4FEB;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .left-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .left-section p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        .right-section {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .right-section h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #4E4FEB;
+        }
+
+        .login-btn {
+            background-color: #4E4FEB;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Espacio entre la imagen y el texto */
+            transition: background-color 0.3s ease-in-out, transform 0.2s;
+        }
+
+        .login-btn img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .login-btn:hover {
+            background-color: #3c3ccf;
+            transform: translateY(-2px);
+        }
+
+        .login-btn:active {
+            transform: translateY(0);
+        }
+
+        .right-section p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sección izquierda -->
+    <div class="left-section">
+        <div>
+            <h1>Bienvenido a Chat VI</h1>
+            <p>La mejor experiencia en conversaciones inteligentes para todos.</p>
+        </div>
+    </div>
+
+    <!-- Sección derecha -->
+    <div class="right-section">
+        <h1>Inicia sesión</h1>
+        <p>Por favor, inicia sesión para continuar disfrutando de la experiencia.</p>
+        <button id="login-google" class="login-btn">
+            <img src="google.png" alt="Google"> Inicia sesión con Google
+        </button>
+    </div>
+
+    <script src="auth.js" type="module"></script>
+</body>
+</html>
+
+

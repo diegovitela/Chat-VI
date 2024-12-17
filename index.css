@@ -1,0 +1,299 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.split-layout {
+    display: flex;
+    height: 100%;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.left-section {
+    background-color: #121212;
+    color: white;
+}
+
+/* ... (resto del CSS) ... */
+
+.typing-effect {
+    font-size: 24px;
+    border-right: 4px solid #FFF;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30ch; 
+    animation: typing 5s steps(30) forwards; 
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 30ch;
+    }
+}
+
+
+
+.right-section {
+    background: white;
+}
+
+.login-btn {
+    padding: 15px 30px;
+    border: 2px solid #070707;
+    border-radius: 5px;
+    background-color: white;
+    color: #020202;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(8, 8, 8, 0.6);
+}
+
+.login-btn:active {
+    transform: scale(0.95);
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;  
+    gap: 10px;            
+    padding: 10px 20px;   
+  
+}
+
+.google-logo {
+    width: 24px;          
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+
+    .split-layout {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        padding: 20px;
+        width: 100%;   
+    }
+
+    .typing-effect {
+        font-size: 18px;
+    }
+
+    .google-logo {
+        width: 20px;  
+    }
+
+    .login-btn {
+        padding: 12px 25px;   
+    }
+}
+
+.google-link {
+    text-decoration: none;
+}
+
+.google-link:hover, .google-link:focus {
+    text-decoration: none;
+}
+
+
+#outline {
+    stroke-dasharray: 2.42777px, 242.77666px;
+    stroke-dashoffset: 0;
+    -webkit-animation: anim 1.6s linear infinite;
+    animation: anim 1.6s linear infinite;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+  }
+  
+  @-webkit-keyframes anim {
+    12.5% {
+      stroke-dasharray: 33.98873px, 242.77666px;
+      stroke-dashoffset: -26.70543px;
+    }
+  
+    43.75% {
+      stroke-dasharray: 84.97183px, 242.77666px;
+      stroke-dashoffset: -84.97183px;
+    }
+  
+    100% {
+      stroke-dasharray: 2.42777px, 242.77666px;
+      stroke-dashoffset: -240.34889px;
+    }
+  }
+  
+  @keyframes anim {
+    12.5% {
+      stroke-dasharray: 33.98873px, 242.77666px;
+      stroke-dashoffset: -26.70543px;
+    }
+  
+    43.75% {
+      stroke-dasharray: 84.97183px, 242.77666px;
+      stroke-dashoffset: -84.97183px;
+    }
+  
+    100% {
+      stroke-dasharray: 2.42777px, 242.77666px;
+      stroke-dashoffset: -240.34889px;
+    }
+  }
+  .loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4); /* Ajusta la opacidad como desees */
+    backdrop-filter: blur(8px); /* Ajusta el valor del desenfoque como prefieras */
+    z-index: 1000;
+}
+
+ 
+/* Formulario de inicio de sesión */
+.login-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #4E4FEB;
+}
+
+/* Enlace para registro */
+.register-link {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.register-link a {
+    color: #4E4FEB;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+  
+
+.bar-wrapper button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  #voiceInputButton, #voiceOutputButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+
+  /* Quitar subrayado del enlace */
+a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Asegurar que el botón esté centrado */
+.login-btn {
+    display: block; /* Hace que el botón sea un bloque, permitiendo centrado */
+    width: 100%; /* Si deseas que el botón ocupe todo el ancho */
+    text-align: center; /* Centra el texto dentro del botón */
+    padding: 10px 20px; /* Ajusta el padding si lo necesitas */
+    font-size: 16px; /* Ajusta el tamaño del texto si es necesario */
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #121212;
+    padding: 20px;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #4E4FEB;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: white;
+}
+
+/* Contenido Principal */
+.main-content {
+    margin-left: 250px; /* Espacio reservado para el sidebar */
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+}
