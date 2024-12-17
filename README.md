@@ -9,6 +9,9 @@ Chat-VI es un asistente conversacional que combina inteligencia artificial con f
 - Información personalizada.  
 - Asistencia técnica.  
 
+Puedes ver la versión en línea de Chat-VI aquí:  
+🌐 **[Chat-VI en vivo](https://chatvi.netlify.app/)**
+
 ---
 
 ## 🌟 **Características principales**  
@@ -19,16 +22,10 @@ Chat-VI es un asistente conversacional que combina inteligencia artificial con f
 
 ---
 
-## 📸 **Capturas de pantalla**  
-
-### **Interfaz principal**  
-![Interfaz principal](https://via.placeholder.com/800x400?text=Captura+Interfaz+Principal)
-
----
-
 ## 🚀 **Cómo instalar y ejecutar**  
 
 1. **Clona el repositorio**:  
    ```bash
    git clone https://github.com/diegovitela/Chat-VI.git
    cd Chat-VI
+
